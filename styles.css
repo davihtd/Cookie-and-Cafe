@@ -1,0 +1,348 @@
+/* Globales */
+html {
+    scroll-behavior: smooth;
+}
+
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.icon-cart {
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+header h2 {
+    padding-left: 90px;
+    padding-top: 230px;
+    color: white;
+    font-size: 40px;
+    font-weight: 100px;
+}
+
+header p {
+    padding-left: 70px;
+    color: white;
+}
+
+header {
+    margin-top: 100px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+    height: 600px;
+    background: url("media/tazaCafe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, #fff 20%, rgba(0, 0, 0, .6) 60%);
+}
+
+nav h1 {
+    padding-left: 90px;
+}
+
+nav p {
+    color: black;
+}
+
+.container-icon {
+    position: relative;
+    padding-right: 130px;
+}
+
+.count-products {
+    position: relative;
+    top: 55%;
+    bottom: 15px;
+    right: 0;
+    margin: auto;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos {
+    font-size: 12px;
+}
+
+.container-cart-products {
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: .8;
+}
+
+.titulo-producto-carrito {
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.precio-producto-carrito {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover {
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart {
+    display: none;
+}
+
+
+/* principal  */
+.container-items {
+    position: relative;
+    padding: 10px 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 50px;
+    justify-content: center;
+    background-color: #73482F;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.secction-titulo {
+    padding-top: 20px;
+    display: block;
+    color: #000;
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .3s;
+}
+
+.item div {
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty {
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+article {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+article img {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.contenido {
+    margin: 10px auto;
+    width: 75%;
+}
+
+article p {
+    margin-top: 30px;
+}
+
+ul {
+    margin: 0;
+    position: relative;
+    display: flex;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding-right: 30px;
+}
+
+.cookie-clicker {
+    margin: 0 auto;
+    width: 80%;
+    height: 500px;
+    background-color: #73482F;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+
+}
+
+.cliker-info {
+    color: white;
+    padding: 40px 60px;
+}
+
+.cliker-info li {
+    list-style: decimal;
+}
+
+.cookie-clicker div {
+    padding: 40px 90px;
+}
+
+.cookie-clicker button {
+    margin: 10px auto;
+    width: 40%;
+    height: 50px;
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}

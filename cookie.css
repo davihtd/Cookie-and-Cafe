@@ -1,0 +1,135 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(media/tazaCafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+.main-cookie {
+    padding-top: 30px;
+    font-family: Arial;
+    background-color: #73482F;
+    width: 50%;
+    height: 90%;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+#hidden{
+    display: block;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 5px;
+}
+
+
+
+table {
+    margin: 10px auto;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+td {
+    border: 1px solid;
+}
+
+#numbers {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    width: 120px;
+    height: 55px;
+}
+
+#upgradeLevel {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: lightpink;
+    width: 210px;
+    height: 55px;
+}
+
+h1 {
+    margin-top: 250px;
+    margin-left: 30px;
+    color: white;
+    font-size: 50px;
+}
+
+button {
+    top: 100px;
+    right: 170px;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.game-win{
+    display: none;
+    width: 50%;
+    height: 600px;
+    border-radius: 15px;
+    margin: 70px auto;
+    background-color: #73482F;
+}
+.game-win img{
+    width: 100%;
+    border-radius: 15px;
+    transition: all .3s;
+}
+
+.game-win:hover img {
+    transform: scale(1.2);
+}
+.game-win h1{
+    padding: 0 200px;
+    font-size: 50px;
+    margin: 50px 0;
+}
+.game-win p{
+    font-size: 30px;
+    margin: 20px 0;
+    padding-left: 215px;
+}
+.game-win div{
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 50%;
+    height: 321px;
+    overflow: hidden;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Café & Cookies</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<header>
+	<h2>Café & Cookies</h2>
+	<p>"Aromas Encantadores, Sabores Inolvidables"</p>
+		<nav>
+			<h1>Café & Cookies</h1>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="icon-cart">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Galletas</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="icon-close">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+
+					<p class="cart-empty">El carrito está vacío</p>
+
+				</div>
+			</div>
+
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#concepto">CONCEPTO</a></li>
+				<li><a href="#menu">MENÚ</a></li>
+				<li><a href="#cookie-clicker">COOKIE CLICKER</a></li>
+				<li><a href="#contactos">CONTACTOS</a></li>
+			</ul>
+			
+		</nav>
+	</header>
+
+	<h1 class="secction-titulo" id="concepto">CONCEPTO</h1>
+	<article>
+		<div class="contenido">
+			<img src="media/cafetería.jpg">
+			<h2>Coffe</h2>
+			<p>[kof-ee] <i>noun</i></p>
+			<p>a magical, dark substance that turns "leave me alone" into "good morning, honey".</p>
+		</div>
+	</article>
+
+	<h1 class="secction-titulo" id="menu">MENÚ</h1>
+
+	<div class="container-items">
+		<div class="item">
+			<div>
+				<img src="media/pancake.jpg"
+					alt="producto" />
+			</div>
+			<div class="info-product">
+				<h2>Panqueque de soufflé</h2>
+				<p class="price">$ 7</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<div>
+				<img src="media/waffles.jpg"
+					alt="producto" />
+			</div>
+			<div class="info-product">
+				<h2>Waffles & Frutillas</h2>
+				<p class="price">$ 5</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<div>
+				<img src="media/malteada.jpg"
+					alt="producto" />
+			</div>
+			<div class="info-product">
+				<h2>Malteada de Limón</h2>
+				<p class="price">$ 8</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<div>
+				<img src="media/frappe.jpg" alt="producto" />
+			</div>
+			<div class="info-product">
+				<h2>Frappé</h2>
+				<p class="price">$ 7</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<div>
+				<img src="media/classic-coffee.jpg"
+					alt="producto" />
+			</div>
+			<div class="info-product">
+				<h2>Café Clásico</h2>
+				<p class="price">$ 1</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<div>
+				<img src="media/cafe-latte.jpg"
+					alt="producto" />
+			</div>
+			<div class="info-product">
+				<h2>Café Latte</h2>
+				<p class="price">$ 2</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+	</div>
+
+	<h1 class="secction-titulo" id="cookie-clicker">COOKIE CLICKER</h1>
+
+	<div class="cookie-clicker">
+		<div class="cliker-info">
+			<h1>¡OFERTA ESPECIAL!</h1>
+			<p>Si ganas en nuestro juego de clicar la galleta te llevas galletas GRATIS en todas tus compras. <br></p>
+			<h1>Reglas:</h1>
+			<ol>
+				<li>Al hacer click sobre la galleta se te suma una galleta.</li>
+				<li>Si consigues 30 galletas podrás comprar una Abuela que te sumará 3 galletas por click.</li>
+				<li>Si consigues 500 galletas podrás comprar una Granja que te sumará 10 galletas por click.</li>
+				<li>Si consigues 1.000 galletas podrás comprar una Fábrica de galletas que te sumará 30 galletas por
+					click.</li>
+				<li>Si consigues 100.000 galletas podrás comprar una Super Fábrica de galletas que te sumará 1000
+					galletas por click.</li>
+			</ol>
+		</div>
+
+		<div>
+			<img src="media/cookie.png" alt="producto" />
+		</div>
+
+		<button onclick="cookiePage()">JUEGA YA</button>
+	</div>
+
+	<script src="index.js"></script>
+
+</body>
+
+</html>
